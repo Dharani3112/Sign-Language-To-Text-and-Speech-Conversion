@@ -1,0 +1,15 @@
+# Minimal dependencies required to run the Sign-Language-To-Text-and-Speech-Conversion demo
+numpy
+opencv-python
+Pillow
+keras
+tensorflow
+cvzone
+mediapipe
+pyttsx3
+pyenchant
+
+# Notes:
+# - Installing `tensorflow` will pull a large wheel. For GPU support, install the appropriate tensorflow package
+#   that matches your CUDA/cuDNN versions (see TensorFlow install docs).
+# - If pyenchant fails to install on Windows, consider using conda: `conda install -c conda-forge pyenchant`.

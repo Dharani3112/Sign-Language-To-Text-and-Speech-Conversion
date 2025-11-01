@@ -221,3 +221,35 @@ Python libraries: OpenCV, NumPy, Keras,mediapipe,Tensorflow
 ![sequence2](https://user-images.githubusercontent.com/99630855/201490230-b903c365-7a4c-4972-8268-5687060b9cd0.png)
 
  
+## How to run (quick)
+
+1. Open PowerShell and change to the project root:
+
+```powershell
+cd 'C:\Users\smuru\OneDrive\Documents\Desktop\Dharani\ML Project\Sign-Language-To-Text-and-Speech-Conversion'
+```
+
+2. Create and activate a virtual environment and install dependencies. You can use the helper script included:
+
+```powershell
+.\run.ps1
+```
+
+3. If you prefer to run manually:
+
+```powershell
+# create venv
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# run the GUI demo (webcam)
+python final_pred.py
+```
+
+Notes:
+- If `pyenchant` fails to install on Windows, try installing it via conda: `conda install -c conda-forge pyenchant`.
+- `prediction_wo_gui.py` is a non-GUI demo; `data_collection_final.py` will save dataset images into `dataset/AtoZ_3.1/` inside this repo.
+
+
